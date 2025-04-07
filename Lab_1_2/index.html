@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src='main.js'> </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа рецептів</title>
+
+</head>
+<body>
+    <header>Платформа для обміну рецептами</header>
+    <nav>
+        <a href="#">Мої рецепти</a>
+        <a href="#">Категорії</a>
+        <a href="#">Коментарі</a>
+    </nav>
+    <button class="add-recipe" onclick="addRecipe()">Додати рецепт</button>
+    <div id="recipe-form">
+        <label>Назва рецепту: <input type="text" id="recipe-name"></label>
+        <br>
+        <label>Час приготування: <input type="number" id="recipe-time"></label>
+        <br>
+        <label>Посилання на зображення: <input type="text" id="recipe-image"></label>
+        <br>
+        <button onclick="saveRecipe()">Зберегти</button>
+    </div>
+    <div class="container"></div>
+</body>
+</html>
